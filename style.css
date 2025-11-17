@@ -375,7 +375,7 @@ blockquote {
 /* --- Footer --- */
 footer {
     background: var(--text-color);
-    color: #eee;
+    color: #A84051;
     text-align: center;
     padding: 20px 0;
     font-size: 0.9rem;
@@ -526,4 +526,5 @@ footer {
         opacity: 1;
         transform: translateX(0);
     }
+
 }
