@@ -1,0 +1,529 @@
+/* Import Poppins font from Google Fonts for a modern, clean look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+:root {
+    --primary-color: #2C5591; /* Dark Blue */
+    --secondary-color: #A84051; /* Complementary yellow accent */
+    --text-color: #333;
+    --bg-color: #AECEDD;
+    --white: #ffffff;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* --- Global Reset and Body Styling --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* **FIX 1: Add a rule for html and enforce no horizontal overflow on body** */
+html {
+    /* Ensures the page content fits the device width */
+    width: 100dvw;
+    /* Prevents issues where body width affects overflow */
+    overflow-x: hidden; 
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    /* **REMOVED:** overflow-x: hidden; from here, moved to html */
+    /* **REMOVED:** width: 100dvw; */
+    width: 100%; /* Ensure body adheres to the html width */
+}
+
+/* --- Navigation Bar (Header) --- */
+header {
+    background: var(--white);
+    box-shadow: var(--shadow-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    padding: 0 5%;
+}
+
+.logo {
+    color: var(--primary-color); 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 25%; /* Set a reasonable width for the links */
+    /* REMOVED: height: 92vh; */
+    list-style: none;
+    /* You may want to adjust justify-content depending on your preferred spacing */
+}
+
+.nav-links li {
+    /* Ensure links are visible on desktop */
+    opacity: 1; 
+    /* Use a small horizontal margin for spacing */
+    margin: 0 2px; 
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: var(--transition);
+    position: relative; 
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--primary-color);
+    transition: width 0.4s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+    left: 0;
+    background: var(--primary-color); 
+}
+
+/* 🍔 Burger Menu Styling (Hidden on desktop, shown on mobile) */
+.burger {
+    display: none; 
+    cursor: pointer;
+    padding: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px 0; 
+    transition: var(--transition);
+    transform-origin: center; 
+}
+
+
+/* --- Main Content Styling --- */
+main {
+    min-height: 80vh;
+    padding: 20px 5%;
+}
+
+/* --- Home Page Styling --- */
+.home-main {
+    /* Background using the uploaded image with a dark overlay for contrast */
+    background: var(--bg-color); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--white);
+    padding: 0;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 100px 0;
+    animation: fadeIn 1s ease-out;
+    color: var(--white);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0px;
+    line-height: 1.4;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.motivational-quote {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 20px;
+    line-height: 1.4;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Exam Banners */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.exam-banner {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px 40px;
+    width: 250px;
+    text-align: center;
+    box-shadow: var(--shadow-light);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exam-banner:hover {
+    transform: translateY(-5px) scale(1.02);
+    /* Blue Shadow */
+    box-shadow: 0 10px 20px rgba(17, 45, 130, 0.3); 
+    /* Light blue tint on hover */
+    background: linear-gradient(135deg, var(--white), #f0f3fa); 
+}
+
+.exam-banner h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+/* Proceed Button */
+.proceed-btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    border: none;
+    /* Blue Shadow */
+    box-shadow: 0 6px 15px rgba(17, 45, 130, 0.4); 
+}
+
+.proceed-btn:hover {
+    background: #0d2263; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* --- Exam Page Styling --- */
+.exam-main {
+    text-align: center;
+    padding: 40px 5%; 
+}
+
+.exam-main h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#subject-search {
+    padding: 12px 20px;
+    width: 350px;
+    max-width: 90%;
+    border: 2px solid #ddd;
+    border-radius: 50px 0 0 50px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#subject-search:focus {
+    border-color: var(--primary-color);
+}
+
+#search-icon {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-icon:hover {
+    background-color: #0d2263; /* Darker blue on hover */
+}
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subject-btn {
+    background: var(--white);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    padding: 20px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+}
+
+.subject-btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-3px);
+    /* Blue Shadow */
+    box-shadow: 0 6px 12px rgba(17, 45, 130, 0.3); 
+}
+
+/* --- About Page Styling --- */
+.about-main {
+    padding: 40px 5%;
+}
+
+.about-hero {
+    /* Blue gradient */
+    background: linear-gradient(rgba(17, 45, 130, 0.8), rgba(17, 45, 130, 0.6)), url(''); 
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mission-vision {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mission-vision article {
+    flex: 1;
+    min-width: 300px;
+    background: var(--white);
+    padding: 30px;
+    border-left: 5px solid var(--secondary-color); /* Kept yellow accent here */
+    border-radius: 8px;
+    box-shadow: var(--shadow-light);
+}
+
+.mission-vision h3 {
+    color: var(--secondary-color); /* Kept yellow accent here */
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.college-history h3 {
+    color: var(--primary-color); 
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+blockquote {
+    /* Light blue background for blockquote */
+    background: #e9efff; 
+    border-left: 5px solid var(--primary-color); 
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    color: #112d82; 
+    border-radius: 5px;
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--text-color);
+    color: #eee;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* --- Modal Styling (for Home Page Banners) --- */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1001; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+    backdrop-filter: blur(5px);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: 5% auto; 
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-title {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+/* 📱 --- Responsiveness (Media Queries) --- 📱 */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+   .navbar {
+        justify-content: space-between; /* Better spacing on mobile */
+        padding: 0 3%;
+   }
+    
+    .nav-links {
+        position: fixed; /* **CHANGE 1: Use 'fixed' or 'absolute' relative to the viewport** */
+        right: 0;
+        height: 100vh; /* **CHANGE 2: Use 100vh or 100dvh for full height** */
+        top: 8vh;
+        background-color: var(--primary-color); /* Blue background for slide-out menu */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%; /* Wider menu for easier selection */
+        transform: translateX(100%); /* Start off-screen */
+        transition: transform 0.5s ease-in-out;
+        z-index: 999;
+
+    }
+
+    .nav-links li {
+        /* FIX: Initial opacity set to 0, animation in JS makes it visible */
+        opacity: 0;
+        margin: 20px 0;
+    }
+    
+    .nav-links li a {
+        color: var(--white);
+        font-size: 1.2rem;
+    }
+
+    .nav-links li a:hover::after,
+    .nav-links li a.active::after {
+        background: var(--secondary-color); /* Yellow accent on menu hover */
+    }
+
+    .nav-active {
+        transform: translateX(0%); /* Slide in */
+    }
+
+    .burger {
+        display: block; /* Show hamburger icon */
+    }
+    
+    .motivational-quote {
+        font-size: 1.5rem;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .exam-banner {
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .mission-vision {
+        flex-direction: column;
+    }
+    
+    /* Burger animation on click (X-shape) */
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

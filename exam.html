@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects</title>
+     <link rel="icon" type="image/x-icon" href="FavIcon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">PAC COLLEGE</div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="exam.html" class="active">EXAM</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="exam-main">
+        <h2>Select Your Subject to Begin</h2>
+        
+        <div class="search-container">
+            <input type="text" id="subject-search" placeholder="Search Subject..." aria-label="Search Subjects">
+            <button id="search-icon"><i class="fa fa-search"></i></button>
+        </div>
+        
+        <div class="subject-grid">
+            <button class="subject-btn" data-subject="English">English Language</button>
+            <button class="subject-btn" data-subject="Mathematics">Mathematics</button>
+            <button class="subject-btn" data-subject="Physics">Physics</button>
+            <button class="subject-btn" data-subject="Chemistry">Chemistry</button>
+            <button class="subject-btn" data-subject="Literature">Literature</button>
+            <button class="subject-btn" data-subject="Economics">Economics</button>
+            <button class="subject-btn" data-subject="Biology">Biology</button>
+            <button class="subject-btn" data-subject="Government">Government</button>
+            <button class="subject-btn" data-subject="Geography">Geography</button>
+            <button class="subject-btn" data-subject="CRK">CRK</button>
+            <button class="subject-btn" data-subject="Sample">SAMPLE</button>
+            <button class="subject-btn" data-subject="Technical">Technical Drawing</button>
+            <button class="subject-btn" data-subject="Agric">Agricultural Science</button>
+            <button class="subject-btn" data-subject="Computer">Computer Studies</button>
+            <button class="subject-btn" data-subject="Civic">Civic Education</button>
+            <button class="subject-btn" data-subject="Accounting">Financial Accounting</button>
+            <button class="subject-btn" data-subject="Insurance">Insurance</button>
+            <button class="subject-btn" data-subject="Health">Health Science</button>
+            <button class="subject-btn" data-subject="History">History</button>
+            <button class="subject-btn" data-subject="French">French</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; GINT LTD 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>
