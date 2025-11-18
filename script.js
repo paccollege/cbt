@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // ⚠️ ACTION REQUIRED: REPLACE THESE PLACEHOLDERS WITH YOUR ACTUAL GOOGLE FORM URLs
     const SUBJECT_LINKS = {
-        'Sample': 'https://forms.gle/1zSncCL4tPp4mHhn7',
+        'Sample': 'https://extendedforms.io/form/a061e478-045f-4903-9954-af5af437f4b7/login',
     };
 
     // Subject Filtering (only runs if the element exists, i.e., on exam.html)
