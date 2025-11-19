@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Sample': 'https://extendedforms.io/form/a061e478-045f-4903-9954-af5af437f4b7/login',
         'Government': 'https://extendedforms.io/form/a063e5c2-3c75-4f18-b143-bbfa8981b053/login',
         'Chemistry': 'https://extendedforms.io/form/a063d9bb-8e41-4278-a7e5-fe0e1b897c51/login',
+        'Geography': 'https://docs.google.com/forms/d/e/1FAIpQLSeh0XQhYgEx92K1N4Lk7zZEPm3rxLe62vd_UxPBlx9zSd_AMA/viewform?usp=publish-editor',
         
         
     };
