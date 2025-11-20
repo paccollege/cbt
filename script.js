@@ -84,9 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ⚠️ ACTION REQUIRED: REPLACE THESE PLACEHOLDERS WITH YOUR ACTUAL GOOGLE FORM URLs
     const SUBJECT_LINKS = {
         'Sample': 'https://extendedforms.io/form/a061e478-045f-4903-9954-af5af437f4b7/login',
-        'Government': 'https://extendedforms.io/form/a063e5c2-3c75-4f18-b143-bbfa8981b053/login',
-        'Chemistry': 'https://extendedforms.io/form/a063d9bb-8e41-4278-a7e5-fe0e1b897c51/login',
-        'Geography': 'https://docs.google.com/forms/d/e/1FAIpQLSeh0XQhYgEx92K1N4Lk7zZEPm3rxLe62vd_UxPBlx9zSd_AMA/viewform?usp=publish-editor',
+        'Mathematics': 'https://extendedforms.io/form/a06692b2-c585-47c0-8ed1-de214d51b2a8/login',
+        'Civic': 'https://extendedforms.io/form/a063e8c3-9a3d-4091-a880-dc06eb86498e/login',
+        'Biology': 'https://extendedforms.io/form/a06699b2-2cde-4ca4-87bc-d497e528c07c/login',
         
         
     };
