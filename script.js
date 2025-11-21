@@ -84,9 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ⚠️ ACTION REQUIRED: REPLACE THESE PLACEHOLDERS WITH YOUR ACTUAL GOOGLE FORM URLs
     const SUBJECT_LINKS = {
         'Sample': 'https://extendedforms.io/form/a061e478-045f-4903-9954-af5af437f4b7/login',
-        'Mathematics': 'https://docs.google.com/forms/d/e/1FAIpQLSfHtdHlGSGG36MswMy--IiRa2aV2w13-CEGTerDJw_y4-m-vQ/viewform?usp=header',
-        'Civic': 'https://docs.google.com/forms/d/e/1FAIpQLScmhACs5VZDbdvoR8bft3R_VkVDhNekbcLV101GDlc9T7QR7Q/viewform?usp=header',
-        'Biology': 'https://extendedforms.io/form/a06699b2-2cde-4ca4-87bc-d497e528c07c/login',
+        'Literature': 'https://extendedforms.io/form/a06898ef-8e50-4081-922e-0a1ddae3fa2a/login',
+        'Physics': 'https://extendedforms.io/form/a0689b56-83d0-4327-aef4-8d6dc15ffe5e/login',
+        'Biology': 'https://docs.google.com/forms/d/e/1FAIpQLSddLXxRgVkumVfV_fZeu0J3tyUFyp-5dUPp2G3ohN8ohakwEg/viewform?usp=header',
         
         
     };
@@ -127,5 +127,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize navigation on load
     navSlide();
-
 });
