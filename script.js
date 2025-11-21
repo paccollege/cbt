@@ -88,7 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'Physics': 'https://extendedforms.io/form/a0689b56-83d0-4327-aef4-8d6dc15ffe5e/login',
         'Economics': 'https://extendedforms.io/form/a068a681-7df2-457d-aecc-913ca9418ebe/login',
         'Technical': 'https://extendedforms.io/form/a068ac81-3c6a-47da-8bea-4149c472ab33/login',
-        
+        'Biology': 'https://extendedforms.io/form/a06699b2-2cde-4ca4-87bc-d497e528c07c/login',
+        'Civic': 'https://extendedforms.io/form/a063e8c3-9a3d-4091-a880-dc06eb86498e/login',
+        'Mathematics': 'https://extendedforms.io/form/a06692b2-c585-47c0-8ed1-de214d51b2a8/login',
         
     };
 
