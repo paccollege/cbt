@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Accounting': 'https://extendedforms.io/form/a0691ff2-cde9-4c89-bd76-a3e618cf83dc/login',
         'Commerce': 'https://extendedforms.io/form/a06e9eb1-d33c-4cb5-94a8-f6167c7a1c1d/login',
         'Fmaths': 'https://extendedforms.io/form/a06ea0c6-3a0e-45b1-9ccf-cd4e13217bad/login',
+        'Mathematics': 'https://extendedforms.io/form/a06692b2-c585-47c0-8ed1-de214d51b2a8/login',
         'Igbo': 'https://extendedforms.io/form/a06ea4cb-bf6f-445f-b4af-5b0e51c40865/login',
         'Computer': 'https://extendedforms.io/form/a06ea843-826e-41dd-ba29-16e441655304/login',
         'Agric': 'https://extendedforms.io/form/a06ec5e2-e509-4d68-9a27-004560929546/login',
