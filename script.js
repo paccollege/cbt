@@ -96,6 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'Fmaths': 'https://extendedforms.io/form/a06ea0c6-3a0e-45b1-9ccf-cd4e13217bad/login',
         'Igbo': 'https://extendedforms.io/form/a06ea4cb-bf6f-445f-b4af-5b0e51c40865/login',
         'Computer': 'https://extendedforms.io/form/a06ea843-826e-41dd-ba29-16e441655304/login',
+        'Agric': 'https://extendedforms.io/form/a06ec5e2-e509-4d68-9a27-004560929546/login',
+        'Food': 'https://extendedforms.io/form/a06ec85c-620b-432c-8ac0-d24d0f925e5f/login',
+        'English': 'https://extendedforms.io/form/a06ed1a7-47eb-41b5-8d64-5255416be975/login',
+        'Oral': 'https://extendedforms.io/form/a06ed491-46dd-4291-895a-1e6d95dfdb1f/login',
         
     };
 
