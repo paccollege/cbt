@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Fmaths': 'https://extendedforms.io/form/a06ea0c6-3a0e-45b1-9ccf-cd4e13217bad/login',
         'Mathematics': 'https://extendedforms.io/form/a06692b2-c585-47c0-8ed1-de214d51b2a8/login',
         'Igbo': 'https://extendedforms.io/form/a06ea4cb-bf6f-445f-b4af-5b0e51c40865/login',
-        'Computer': 'https://extendedforms.io/form/a06ea843-826e-41dd-ba29-16e441655304/login',
+        'Computer': 'https://docs.google.com/forms/d/e/1FAIpQLSdoPmvaEBbB-kQmKWa79GYKL-p5qZ8Rzsmf1UOYLsFJefgIFA/viewform?usp=header',
         'Agric': 'https://docs.google.com/forms/d/e/1FAIpQLSeIHRvVBpuF1lWtidgCAq1Ma1zikLval_SrzaKWLYW2yyXD7g/viewform?usp=header',
         'Food': 'https://docs.google.com/forms/d/e/1FAIpQLSeNBwdk2SniMPy0ZDKI7DmIMqAZkynuY0hTwBN47NI0Ku8PVQ/viewform?usp=header',
         'English': 'https://docs.google.com/forms/d/e/1FAIpQLSfWY-lfUAXobkzLBj5FNkbbe4WNDIRYnpc15eSSeA-bulEvwQ/viewform?usp=header',
