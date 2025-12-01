@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ⚠️ ACTION REQUIRED: REPLACE THESE PLACEHOLDERS WITH YOUR ACTUAL GOOGLE FORM URLs
     const SUBJECT_LINKS = {
         'CRS': 'https://extendedforms.io/form/a068a960-7fab-40d3-b692-61e9ddfd9b20/login',
-        'Literature': 'https://extendedforms.io/form/a06898ef-8e50-4081-922e-0a1ddae3fa2a/login',
+        'Literature': 'https://docs.google.com/forms/d/e/1FAIpQLSePVGk7QglaxczbGHyUHO3zR3Ev0anFHNYmQDveR1c5TrgT-A/viewform?usp=header',
         'Physics': 'https://extendedforms.io/form/a0689b56-83d0-4327-aef4-8d6dc15ffe5e/login',
         'Economics': 'https://extendedforms.io/form/a068a681-7df2-457d-aecc-913ca9418ebe/login',
         'Technical': 'https://extendedforms.io/form/a068ac81-3c6a-47da-8bea-4149c472ab33/login',
